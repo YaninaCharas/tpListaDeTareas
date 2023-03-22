@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   background-color: lightseagreen;
@@ -16,14 +16,49 @@ h1 {
 .container {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 30%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   padding: 30px;
+  display: flex;
 }
-
-.tareasList {
+.containerOne {
+  display: inline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: 5px;
+  background-color: white;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.containerTwo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 40%;
+  margin-left: 5px;
+  margin-right: auto;
+  background-color: white;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.containerTree {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 20%;
+  margin-left: 5px;
+  margin-right: auto;
+  background-color: white;
+  color: darkslategrey;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.search {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -34,23 +69,17 @@ form {
 }
 
 input {
-  padding: 15px 10px;
-  width: 300px;
+  padding: 10px 5px;
   outline: none;
+  width: 400px;
 }
 
-.btn-add {
-  padding: 5px 15px;
-  color: white;
-  border: none;
-  font-family: fantasy;
-  background-color: teal;
-  font-size: 1.4rem;
-  outline: none;
-}
-
-.empty {
-  color: darkslategrey;
+.li-container {
+  background-color: white;
+  width: 100%;
+  color: darkslategray;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 ul {
@@ -58,9 +87,53 @@ ul {
 }
 
 li {
-  color:gray;
-  text-decoration: none;
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: flex;
 }
 
 li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  font-family: fantasy;
+  background-color: teal;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+.empty {
+  color: darkslategrey;
 }
